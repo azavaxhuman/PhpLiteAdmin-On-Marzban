@@ -400,7 +400,7 @@ install() {
     done
 
     # Ask for SSL usage
-    input "Do you want to use SSL certificate? (y/n): " use_ssl
+    input "Do you want to use SSL certificate? (y/n) (Default: n): " use_ssl
     if [[ "$use_ssl" =~ ^[Yy]$ ]]; then
         success "SSL will be configured."
         make_directory "/root/phpliteadmin/haproxy"
