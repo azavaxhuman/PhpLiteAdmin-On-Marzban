@@ -18,7 +18,6 @@ colors=(
 )
 foreground=${colors[0]} red=${colors[1]} green=${colors[2]} blue=${colors[3]} brightBlue=${colors[4]} brightWhite=${colors[5]} cyan=${colors[6]} brightYellow=${colors[7]} purple=${colors[8]} brightRed=${colors[9]} brightGreen=${colors[10]} brightCyan=${colors[11]} reset=${colors[12]}
 
-# Helper functions
 print() { echo -e "${cyan}$1${reset}"; }
 error() { echo -e "${red}✗ $1${reset}"; }
 success() { echo -e "${green}✓ $1${reset}"; }
@@ -26,7 +25,6 @@ log() { echo -e "${blue}! $1${reset}"; }
 input() { read -p "$(echo -e "${brightYellow}▶ $1${reset}")" "$2"; }
 confirm() { read -p "$(echo -e "\n${purple}Press any key to continue...${reset}")"; }
 
-# Function to check if input is a valid port number
 is_valid_port() {
     [[ "$1" =~ ^[0-9]{1,5}$ ]] && [ "$1" -ge 1 ] && [ "$1" -le 65535 ]
 }
