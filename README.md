@@ -1,5 +1,7 @@
 # PHPLiteAdmin + Marzban
 
+<p align="center"><img style="border-radius: 5%" src="./phot.png" alt="project-image"></p>
+
 ## ⚡ What is it?
 
 This is a simple script that installs and configures [PhpLiteAdmin](https://github.com/azavaxhuman/PhpLiteAdmin) on Marzban.
